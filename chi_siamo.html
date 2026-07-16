@@ -12,20 +12,15 @@
     <!-- start cinzel link font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cinzel+Decorative:wght@700&family=Montserrat&display=swap" rel="stylesheet">
     <!-- end cinzel link font -->
     <!-- start cinzel decorative link font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
     <!-- end cinzel decorative link font-->
     <script src="scriptmor.js" defer></script>
     <script src="jsmor/translations.js"></script>
     <script src="jsmor/i18n.js" defer></script>
+    <script src="jsmor/cookie-consent.js" defer></script>
     <!-- start Montserrat link font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- end Monteserrat link font -->
     
       </head> 
@@ -67,7 +62,7 @@
                 <div class="timeline">
                     <div class="timeline-content">
                         <div class="circle"><span class="homebox">
-                          <img src="photosmorano/Nonno Mago1.jpg" alt="Nonno Mago" class="img">
+                          <img src="photosmorano/webp/Nonno Mago1.webp" alt="Nonno Mago" class="img">
                          </span></div>
                         <div class="content">
                             <span class="year" data-i18n="about.gen1.year">Prima generazione</span>
@@ -81,7 +76,7 @@
                 </div>
                 <div class="timeline">
                     <div class="timeline-content">
-                        <div class="circle"><span class="homebox"><img src="photosmorano/cesare1.jpg" alt="Cesare Mocini" class="img"></span></div>
+                        <div class="circle"><span class="homebox"><img loading="lazy" decoding="async" src="photosmorano/webp/cesare1.webp" alt="Cesare Mocini" class="img"></span></div>
                         <div class="content">
                             <span class="year" data-i18n="about.gen2.year">Seconda generazione</span>
                             <h3 class="title h4">Cesare</h3>
@@ -93,7 +88,7 @@
                 </div>
                 <div class="timeline">
                     <div class="timeline-content">
-                        <div class="circle"><span class="homebox"><img src="photosmorano/ubaldo2.jpg" alt="Ubaldo Mocini" class="img"></span></div>
+                        <div class="circle"><span class="homebox"><img loading="lazy" decoding="async" src="photosmorano/webp/ubaldo2.webp" alt="Ubaldo Mocini" class="img"></span></div>
                         <div class="content">
                             <span class="year" data-i18n="about.gen3.year">Terza generazione</span>
                             <h3 class="title h4">Ubaldo</h3>
@@ -106,7 +101,7 @@
                 </div>
                 <div class="timeline">
                     <div class="timeline-content">
-                        <div class="circle"><span class="homebox"><img src="photosmorano/Pietrocca1.jpg" alt="Pietro Mocini" class="img"></span></div>
+                        <div class="circle"><span class="homebox"><img loading="lazy" decoding="async" src="photosmorano/webp/Pietrocca1.webp" alt="Pietro Mocini" class="img"></span></div>
                         <div class="content">
                             <span class="year" data-i18n="about.gen4.year">Quarta generazione</span>
                             <h3 class="title h4">Pietro</h3>
@@ -119,7 +114,7 @@
                 </div>
                  <div class="timeline">
                     <div class="timeline-content">
-                        <div class="circle"><span class="homebox"><img src="photosmorano/0031 Moranorid.jpg" alt="Riccardo, Alessandro, Gabriele" class="img"></span></div>
+                        <div class="circle"><span class="homebox"><img loading="lazy" decoding="async" src="photosmorano/webp/0031 Moranorid.webp" alt="Riccardo, Alessandro, Gabriele" class="img"></span></div>
                         <div class="content">
                             <span class="year" data-i18n="about.gen5.year">Quinta generazione</span>
                             <h3 class="title 4">Riccardo e Alessandro</h3>
@@ -144,7 +139,8 @@
                             <div class="colfoot-4" style="padding-bottom: 15px">
                                 <div class="footitle"><b data-i18n="footer.location">Dove siamo</b><i class=" icon fa-solid fa-location-dot"></i></div>
                                 Via del lago 160 <br>Montefiascone (VT)<br>
-                                <a href="https://goo.gl/maps/LNAeE7PMAn3Y1VBK8" id="link_google_map" data-i18n="footer.maplink">Link Google Maps</a>
+                                <a href="https://goo.gl/maps/LNAeE7PMAn3Y1VBK8" id="link_google_map" data-i18n="footer.maplink">Link Google Maps</a><br>
+                                <a href="cookie-policy.html" data-i18n="cookie.banner.link">Cookie Policy</a> · <a href="#" id="cookie-prefs-link" data-i18n="footer.cookiePrefs">Preferenze cookie</a>
                             </div>
                             <div class="colfoot-4">
                                 <div class="footitle"><b data-i18n="footer.hours">Orari</b><i class="icon fa-solid fa-clock"></i></div>
@@ -155,9 +151,16 @@
                             </div>
                         </div>
                             <div class="sign_iva">
-                                <i>Design by Lorenzo Viglianisi with <i class="fa-solid fa-heart"></i></i> IVA 01595400563
+                                <i>Design by LV with <i class="fa-solid fa-heart"></i></i> IVA 01595400563
                             </div>
                     </footer>
+                    <div id="cookie-banner" hidden>
+                        <p data-i18n="cookie.banner.text">Utilizziamo cookie tecnici per il funzionamento del sito e, solo previo consenso, cookie di analytics (Google Analytics) per capire come viene usato il sito. Puoi accettare o rifiutare in qualsiasi momento.</p>
+                        <div class="cookie-banner-actions">
+                            <button type="button" id="cookie-reject" data-i18n="cookie.banner.reject">Rifiuta</button>
+                            <button type="button" id="cookie-accept" data-i18n="cookie.banner.accept">Accetta</button>
+                        </div>
+                    </div>
        </body>
     </html>
 

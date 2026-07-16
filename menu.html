@@ -12,20 +12,15 @@
 		<!-- start cinzel link font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cinzel+Decorative:wght@700&family=Montserrat&display=swap" rel="stylesheet">
 		<!-- end cinzel link font -->
 		<!-- start cinzel decorative link font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
 		<!-- end cinzel decorative link font-->
 		<script src="scriptmor.js" defer></script>
 		<script src="jsmor/translations.js"></script>
 		<script src="jsmor/i18n.js" defer></script>
+		<script src="jsmor/cookie-consent.js" defer></script>
 		<!-- start Montserrat link font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<!-- end Monteserrat link font -->
 		
 			</head>	
@@ -179,7 +174,7 @@
 	<div class="pizza">
 		<div><h1 class="proposal"><b data-i18n="menu.proposal.pizza">...ma anche pizza!</b></h1></div>
 		<p data-i18n-html="menu.pizza.text">Dal 2015 abbiamo deciso di offrire ai nostri clienti la possibilità di mangiare anche un'ottima e sfiziosa <b>pizza</b> sulle rive del lago di Bolsena. Disponiamo di un nuovo forno a legna gestito dal nostro capo-pizzaiolo e titolare Alessandro.<br>La nostra pizzeria è aperta a cena:<br>tutti i giorni durante la stagione estiva; venerdì, sabato e domenica durante gli altri periodi dell'anno.</p>
-		<img src="photosmorano/pizza.jpg" style="width:100%; height:auto; margin-bottom: 10px"><img>
+		<img loading="lazy" decoding="async" src="photosmorano/webp/pizza.webp" style="width:100%; height:auto; margin-bottom: 10px">
 	</div>
 						<footer>
 						<div class="rowfoot">
@@ -190,7 +185,8 @@
 							<div class="colfoot-4" style="padding-bottom: 15px">
 							    <div class="footitle"><b data-i18n="footer.location">Dove siamo</b><i class=" icon fa-solid fa-location-dot"></i></div>
 							    Via del lago 160 <br>Montefiascone (VT)<br>
-							    <a href="https://goo.gl/maps/LNAeE7PMAn3Y1VBK8" id="link_google_map" data-i18n="footer.maplink">Link Google Maps</a>
+							    <a href="https://goo.gl/maps/LNAeE7PMAn3Y1VBK8" id="link_google_map" data-i18n="footer.maplink">Link Google Maps</a><br>
+							    <a href="cookie-policy.html" data-i18n="cookie.banner.link">Cookie Policy</a> · <a href="#" id="cookie-prefs-link" data-i18n="footer.cookiePrefs">Preferenze cookie</a>
 							</div>
 							<div class="colfoot-4">
 								<div class="footitle"><b data-i18n="footer.hours">Orari</b><i class="icon fa-solid fa-clock"></i></div>
@@ -201,8 +197,15 @@
 							</div>
 						</div>
 							<div class="sign_iva">
-								<i>Design by Lorenzo Viglianisi with <i class="fa-solid fa-heart"></i></i> IVA 01595400563 
+								<i>Design by LV with <i class="fa-solid fa-heart"></i></i> IVA 01595400563
 							</div>
 					</footer>
+					<div id="cookie-banner" hidden>
+						<p data-i18n="cookie.banner.text">Utilizziamo cookie tecnici per il funzionamento del sito e, solo previo consenso, cookie di analytics (Google Analytics) per capire come viene usato il sito. Puoi accettare o rifiutare in qualsiasi momento.</p>
+						<div class="cookie-banner-actions">
+							<button type="button" id="cookie-reject" data-i18n="cookie.banner.reject">Rifiuta</button>
+							<button type="button" id="cookie-accept" data-i18n="cookie.banner.accept">Accetta</button>
+						</div>
+					</div>
 			 </body>
 		</html>

@@ -13,25 +13,17 @@
 		<!-- start cinzel link font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Cinzel+Decorative:wght@700&family=Montserrat&display=swap" rel="stylesheet">
 		<!-- end cinzel link font -->
 		<!-- start cinzel decorative link font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
 		<!-- end cinzel decorative link font-->
 		<script src="scriptmor.js" defer></script>
 		<script src="jsmor/translations.js"></script>
 		<script src="jsmor/i18n.js" defer></script>
+		<script src="jsmor/cookie-consent.js" defer></script>
 		<!-- start Montserrat link font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<!-- end Monteserrat link font -->
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9GNKKB45Q4"></script>
-		
-			</head>	
+			</head>
 				<body>
 					    <header>
 							<nav class="navbar">
@@ -66,18 +58,18 @@
                         	<h1 style="font-family: 'Montserrat, sans-serif'; font-size: 30px; text-align: center; margin-top:25px" data-i18n="restaurant.heading">Tre locali, tre storie, tre modi di vivere il pranzo e la cena</h1>
                         </div>
                     	<div class="restaurant_container">
-                        	<img src="photosmorano/0004 Moranorid169better.jpg" style="width: 100%; height: auto"></img>
+                        	<img src="photosmorano/webp/0004 Moranorid169better.webp" style="width: 100%; height: auto"></img>
                         	<div class="restaurant_description"><p data-i18n-html="restaurant.terrace">La <b>terrazza</b> è la parte del ristorante più ambita durante la stagione estiva, offre uno scorcio del lago di Bolsena mozzafiato. Si tratta del primo locale costruito durante la lunga storia della trattoria Da Morano. Il tramonto visto dalla terrazza di Morano è un'esperienza da vivere. Incantevole.</p></div>
                         </div>
                         	<hr class="restaurant_linea_blu"></hr>
                         <div class="restaurant_container">
-                        	<img src="photosmorano/0012 Moranorid169better.jpg" style="width: 100%; height: auto"></img>
+                        	<img loading="lazy" decoding="async" src="photosmorano/webp/0012 Moranorid169better.webp" style="width: 100%; height: auto"></img>
                         	<div class="restaurant_description"><p data-i18n-html="restaurant.veranda">La <b>veranda</b> con le sue ampie ed eleganti vetrate consente di godere dello spettacolo del lago durante le tipiche giornate di tramontana che caratterizzano il paesaggio circostante. Ideale per le miti giornate autunnali e primaverili. Luminosa.</p></div>
                         </div>
                         	<hr class="restaurant_linea_blu"></hr>
                         <div class="restaurant_container">
-                        	<img src="photosmorano/salainterna_1.169better.jpg" style="width: 100%; height: auto; margin-bottom: 20px" ></img>
-                        	<img src="photosmorano/salainterna_4.169better.jpg" style="width: 100%; height: auto"></img>
+                        	<img loading="lazy" decoding="async" src="photosmorano/webp/salainterna_1.169better.webp" style="width: 100%; height: auto; margin-bottom: 20px" ></img>
+                        	<img loading="lazy" decoding="async" src="photosmorano/webp/salainterna_4.169better.webp" style="width: 100%; height: auto"></img>
                         	<div class="restaurant_description"><p data-i18n-html="restaurant.rooms">Le fredde giornate invernali rendono il lago più freddo ma non meno seducente. Il ristorante non solo si affaccia sul lago, ma offre anche la possibilità di pranzare in due <b>sale interne</b> dagli stili diversi per tenere unito passato e presente. Classico e moderno.</p></div>
                         </div>
 						<hr class="linea-blu"></hr>
@@ -93,7 +85,8 @@
 							<div class="colfoot-4" style="padding-bottom: 15px">
 							    <div class="footitle"><b data-i18n="footer.location">Dove siamo</b><i class=" icon fa-solid fa-location-dot"></i></div>
 							    Via del lago 160 <br>Montefiascone (VT)<br>
-							    <a href="https://goo.gl/maps/LNAeE7PMAn3Y1VBK8" id="link_google_map" data-i18n="footer.maplink">Link Google Maps</a>
+							    <a href="https://goo.gl/maps/LNAeE7PMAn3Y1VBK8" id="link_google_map" data-i18n="footer.maplink">Link Google Maps</a><br>
+							    <a href="cookie-policy.html" data-i18n="cookie.banner.link">Cookie Policy</a> · <a href="#" id="cookie-prefs-link" data-i18n="footer.cookiePrefs">Preferenze cookie</a>
 							</div>
 							<div class="colfoot-4">
 								<div class="footitle"><b data-i18n="footer.hours">Orari</b><i class="icon fa-solid fa-clock"></i></div>
@@ -104,8 +97,15 @@
 							</div>
 						</div>
 							<div class="sign_iva">
-								<i>Design by Lorenzo Viglianisi with <i class="fa-solid fa-heart"></i></i> IVA 01595400563
+								<i>Design by LV with <i class="fa-solid fa-heart"></i></i> IVA 01595400563
 							</div>
 					</footer>
+					<div id="cookie-banner" hidden>
+						<p data-i18n="cookie.banner.text">Utilizziamo cookie tecnici per il funzionamento del sito e, solo previo consenso, cookie di analytics (Google Analytics) per capire come viene usato il sito. Puoi accettare o rifiutare in qualsiasi momento.</p>
+						<div class="cookie-banner-actions">
+							<button type="button" id="cookie-reject" data-i18n="cookie.banner.reject">Rifiuta</button>
+							<button type="button" id="cookie-accept" data-i18n="cookie.banner.accept">Accetta</button>
+						</div>
+					</div>
 			 </body>
 		</html>
