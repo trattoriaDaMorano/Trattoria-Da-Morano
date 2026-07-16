@@ -1,0 +1,1120 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #F2F2F2;
+  color: #17284B;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*responsive images*/
+.responsive {
+  width: 100%;
+  height: auto;
+}
+/* start code set up on min width*/
+  .navbar {
+    background-color: #17284B;
+    color: #F2F2F2;
+    height: auto;
+    width: auto;
+    position: relative;
+  }
+  .brand-title {
+    font-family: 'Cinzel decorative', cursive;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    letter-spacing: 16px;
+  }
+  .toggle-button {
+    display: none;
+  }
+  .navbar-links ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+    font-family: 'Cinzel', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .menu_item a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: transform 250ms ease, background-color 250ms ease, color 250ms ease;
+  }
+  /*active class to orient the user*/
+  .menu_item a.active {
+    background-color: #F2F2F2;
+    color: #17284B;
+    font-weight: 600;
+  }
+  .menu_item a.active::after {
+    display: none;
+  }
+  .menu_item a:hover {
+    transform: scale(1.15);
+  }
+  .menu_item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background-color: #F2F2F2;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 250ms ease;
+  }
+  .menu_item a:hover::after {
+    transform: scaleX(1);
+  }
+  /*start homepage code*/
+  .bg1 {
+  height: 300px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../photosmorano/terrazza_2rid.jpg");
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+  .slogan{
+    font-family: 'Cinzel', sans-serif;
+    color: #F2F2F2;
+    text-align: center;
+    position: relative;
+    top: 50px;
+  }
+  .linea-blu {
+    width: 300px;
+    height: 4px;
+    background: #17284B;
+    clear: both;
+    margin: auto;
+    margin-top: 25px;
+}
+.home_container {
+  margin:50px;
+}
+.home_row {
+  display: flex; 
+  flex-direction: row;
+   column-gap: 50px;
+}
+.col-sm-4 {
+  width:100%;
+}
+.bg2 {
+  height: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../photosmorano/0043\ Moranorid.jpg"); 
+  background-size: 100% 100%;
+  margin-bottom: 5px;
+}
+
+/*end homepage code*/
+/* startfooter code*/
+footer {
+    background-color: #17284B;
+    color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+ }
+ .rowfoot {
+  padding: 20px;
+  display: flex;
+  column-gap: 5px;
+}
+ .colfoot-4 {
+  width: 100%;
+  float: left;
+ }
+ .sign_iva {
+  background-color: #F2F2F2;
+  color: #17284B;
+ }
+ .icon {
+  margin-left: 10px;
+ }
+ .sign_iva {
+  font-size: 10px;
+  padding-left: 10px;
+ }
+ /* end footer code */
+@media screen and (max-width: 768px) {
+  header {
+    background-color: #17284B;
+  }
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #17284B;
+  color: #F2F2F2;
+  flex-direction: column;
+  padding-bottom: 5px;
+}
+.brand-title {
+    font-family: 'Cinzel decorative', cursive;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    letter-spacing: 9px;
+    margin-left: 9px;
+  }
+.navbar-links {
+    display: none;
+  }
+.navbar-links.active {
+  display: flex;
+  line-height: 7px;
+}
+.navbar-links ul{
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 0px;
+  align-items: center;
+}
+.navbar-links li a {
+  text-decoration: none;
+  list-style: none;
+  color: #F2F2F2;
+  padding: 1rem;
+  display: block;
+  transition: background-color 250ms ease, color 250ms ease;
+ }
+  .navbar-links li a.active {
+  color: #17284B;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  font-weight: 600;
+  }
+footer {
+    background-color: #17284B;
+    color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+ }
+ .rowfoot {
+  display:flex;
+ }
+.icon {
+  margin-left: 5px;
+  }
+ .sign_iva {
+  font-size: 7px;
+ }
+/*start hamburger animation code*/
+  .toggle-button {
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.toggle-button .bar {
+  background-color:#F2F2F2;
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width:100%;
+  height: 4px;
+  transition-duration: 500ms;
+}
+.toggle-button .bar:nth-child(1){
+  top:-6px;
+  left: 0px;
+}
+.toggle-button .bar:nth-child(2){
+  top:5px;
+  left: 0px;
+  opacity:1;
+}
+.toggle-button .bar:nth-child(3){
+  bottom:6px;
+  left: 0px;
+}
+.toggle-button.open .bar:nth-child(1){
+  transform: rotate(45deg);
+  top: 13px;
+}
+.toggle-button.open .bar:nth-child(2){
+  opacity:0;
+}
+.toggle-button.open .bar:nth-child(3){
+  transform: rotate(-45deg);
+  top: 13px;
+}
+/*keep the 3-column home layout from squeezing into a narrow row once the nav has already collapsed to mobile*/
+.home_row {
+  flex-direction: column;
+}
+.col-sm-4 {
+  width: 100%;
+  height: auto;
+}
+.home_container {
+  margin: 20px;
+}
+/*background-attachment: fixed is unreliable on touch devices (notably iOS Safari)*/
+.bg1,
+.bg2 {
+  background-attachment: scroll;
+}
+}
+/*end hamburger animation code*/
+@media screen and (max-width: 425px) {
+  .rowfoot {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+  }
+}
+/*start homepage code for small devices*/
+@media screen and (max-width: 600px) {
+.bg1 {
+   /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../photosmorano/terrazza_2rid.jpg");
+
+
+  /* Set a specific height */
+  height: 200px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .slogan{
+    font-family: 'Cinzel', san-serif;
+    color: #F2F2F2;
+    text-align: center;
+    position: relative;
+    top: 50px;
+  }
+  .linea-blu {
+    width: 300px;
+    height: 4px;
+    background: #17284B;
+    clear: both;
+    margin: auto;
+    margin-top: 25px;
+}
+.home_container {
+  margin: 20px;
+}
+.home_row {
+  display: flex;
+  flex-direction: column;
+}
+.col-sm-4 {
+  width:100%;
+  height: auto;
+}
+
+.bg2 {
+  height: 110px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../photosmorano/0043 Moranoridsmdevice.jpg"); 
+  background-size: 100% 100%;
+  margin-bottom: 5px;
+}
+}
+/*Start chi siamo page code*/
+.main-timeline{ position: relative; }
+.main-timeline:before,
+.main-timeline:after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.main-timeline:before{
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #2B4C8C;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.main-timeline .timeline{
+    width: 50%;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.main-timeline .timeline:before,
+.main-timeline .timeline:after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.main-timeline .timeline:first-child:before,
+.main-timeline .timeline:last-child:before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #F2F2F2;
+    border: 4px solid rgba(43, 76, 140);
+    position: absolute;
+    top: 0;
+    right: -14px;
+    z-index: 1;
+}
+.main-timeline .timeline:last-child:before{
+    top: auto;
+    bottom: 0;
+}
+.main-timeline .timeline:last-child:nth-child(even):before{
+    right: auto;
+    left: -12px;
+    bottom: -2px;
+}
+.main-timeline .timeline-content{
+    text-align: center;
+    margin-top: 8px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+.main-timeline .timeline-content:before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    background: rgba(23, 40, 75);
+    position: absolute;
+    top: 88px;
+    left: 0;
+    z-index: -1;
+}
+.main-timeline .circle{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #fff;
+    border: 8px solid rgba(23, 40, 75);
+    float: left;
+    margin-right: 25px;
+    position: relative;
+}
+.main-timeline .circle:before{
+    content: "";
+    width: 26px;
+    height: 30px;
+    background: rgba(23, 40, 75);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: -33px;
+    bottom: 0;
+    z-index: -1;
+    box-shadow: inset 7px 0 9px -7px #F2F2F2;
+}
+.main-timeline .circle span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    line-height: 268px;
+    font-size: 80px;
+    color: #454344;
+}
+.main-timeline .circle span:before,
+.main-timeline .circle span:after{
+    content: "";
+    width: 28px;
+    height: 50px;
+    background: #F2F2F2;
+    border-radius: 0 0 0 21px;
+    margin: auto;
+    position: absolute;
+    top: -54px;
+    right: -33px;
+    bottom: 0;
+    z-index: -1;
+}
+.main-timeline .circle span:after{
+    border-radius: 21px 0 0 0;
+    top: 0;
+    bottom: -56px;
+}
+.main-timeline .circle .img{
+    vertical-align: top;
+    border-radius: 50%;
+    width: 164px;
+    height: 164px;
+}
+.main-timeline .content{
+    display: table;
+    padding-right: 40px;
+    position: relative;
+}
+.main-timeline .year{
+    display: block;
+    padding: 10px;
+    margin: 10px 0 50px 0;
+    background: rgba(23, 40, 75);
+    border-radius: 7px;
+    font-size: 25px;
+    color: #F2F2F2;
+}
+.main-timeline .title{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(23, 40, 75);
+    margin-top: 0;
+}
+.main-timeline .description{
+    font-size: 14px;
+    color: #17284B;
+    text-align: justify;
+    letter-spacing:1px;
+}
+.main-timeline .icon{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #F2F2F2;
+    border: 4px solid rgba(23, 40, 75);
+    position: absolute;
+    top: 78px;
+    right: -14px;
+}
+.main-timeline .icon:before{
+    content: "";
+    width: 15px;
+    height: 25px;
+    background: rgba(23, 40, 75);
+    margin: auto;
+    position: absolute;
+    top: -1px;
+    left: -15px;
+    bottom: 0;
+    z-index: -1;
+}
+.main-timeline .icon span:before,
+.main-timeline .icon span:after{
+    content: "";
+    width: 21px;
+    height: 25px;
+    background: #F2F2F2;
+    border-radius: 0 0 21px 0;
+    margin: auto;
+    position: absolute;
+    top: -30px;
+    left: -15px;
+    bottom: 0;
+    z-index: -1;
+}
+.main-timeline .icon span:after{
+    border-radius: 0 21px 0 0;
+    top: 0;
+    left: -15px;
+    bottom: -30px;
+}
+.main-timeline .timeline:nth-child(2n) .timeline-content,
+.main-timeline .timeline:nth-child(2n) .circle{
+    float: right;
+}
+.main-timeline .timeline:nth-child(2n) .circle{
+    margin: 0 0 0 25px;
+}
+.main-timeline .timeline:nth-child(2n) .circle:before{
+    right: auto;
+    left: -33px;
+    box-shadow: -7px 0 9px -7px #444 inset;
+}
+.main-timeline .timeline:nth-child(2n) .circle span:before,
+.main-timeline .timeline:nth-child(2n) .circle span:after{
+    right: auto;
+    left: -33px;
+    border-radius: 0 0 21px 0;
+}
+.main-timeline .timeline:nth-child(2n) .circle span:after{
+    border-radius: 0 21px 0 0;
+}
+.main-timeline .timeline:nth-child(2n) .content{
+    padding: 0 0 0 40px;
+    margin-left: 2px;
+}
+.main-timeline .timeline:nth-child(2n) .icon{
+    right: auto;
+    left: -14px;
+}
+.main-timeline .timeline:nth-child(2n) .icon:before,
+.main-timeline .timeline:nth-child(2n) .icon span:before,
+.main-timeline .timeline:nth-child(2n) .icon span:after{
+    left: auto;
+    right: -15px;
+}
+.main-timeline .timeline:nth-child(2n) .icon span:before{
+    border-radius: 0 0 0 21px;
+}
+.main-timeline .timeline:nth-child(2n) .icon span:after{
+    border-radius: 21px 0 0 0;
+}
+.main-timeline .timeline:nth-child(2){
+    margin-top: 180px;
+}
+.main-timeline .timeline:nth-child(odd){
+    margin: -175px 0 0 0;
+}
+.main-timeline .timeline:nth-child(even){
+    margin-bottom: 180px;
+}
+.main-timeline .timeline:first-child,
+.main-timeline .timeline:last-child:nth-child(even){
+    margin: 0;
+}
+@media only screen and (max-width: 990px){
+    .main-timeline:before{ left: 100%; }
+    .main-timeline .timeline{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px !important;
+    }
+    .main-timeline .timeline:first-child:before,
+    .main-timeline .timeline:last-child:before{
+        left: auto !important;
+        right: -13px !important;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle{
+        float: left;
+        margin: 0 25px 0 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle:before{
+        right: -33px;
+        left: auto;
+        box-shadow: 7px 0 9px -7px #F2F2F2 inset;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle span:before,
+    .main-timeline .timeline:nth-child(2n) .circle span:after{
+        right: -33px;
+        left: auto;
+        border-radius: 0 0 0 21px;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle span:after{
+        border-radius: 21px 0 0 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .content{
+        padding: 0 40px 0 0;
+        margin-left: 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon{
+        right: -14px;
+        left: auto;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon:before,
+    .main-timeline .timeline:nth-child(2n) .icon span:before,
+    .main-timeline .timeline:nth-child(2n) .icon span:after{
+        left: -15px;
+        right: auto;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon span:before{
+        border-radius: 0 0 21px 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon span:after{
+        border-radius: 0 21px 0 0;
+    }
+    .main-timeline .timeline:nth-child(2),
+    .main-timeline .timeline:nth-child(odd),
+    .main-timeline .timeline:nth-child(even){
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 480px){
+    .main-timeline:before{ left: 0; }
+    .main-timeline .timeline:first-child:before,
+    .main-timeline .timeline:last-child:before{
+        left: -12px !important;
+        right: auto !important;
+    }
+    .main-timeline .circle,
+    .main-timeline .timeline:nth-child(2n) .circle{
+        width: 130px;
+        height: 130px;
+        float: none;
+        margin: 0 auto;
+    }
+    .main-timeline .timeline-content:before{
+        width: 99.5%;
+        top: 68px;
+        left: 0.5%;
+    }
+    .main-timeline .circle span{
+        line-height: 115px;
+        font-size: 60px;
+    }
+    .main-timeline .circle:before,
+    .main-timeline .circle span:before,
+    .main-timeline .circle span:after,
+    .main-timeline .icon{
+        display: none;
+    }
+    .main-timeline .content,
+    .main-timeline .timeline:nth-child(2n) .content{
+        padding: 0 10px;
+    }
+    .main-timeline .year{
+        margin-bottom: 15px;
+    }
+    .main-timeline .description{
+        text-align: center;
+    }
+    .main-timeline .circle .img {
+      height: 114px;
+      width: 114px;
+    }
+}
+/*end chi siamo page code*/
+
+/*start ristorante page code*/
+.restaurant_container {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.restaurant_description {
+  font-family:'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.restaurant_linea_blu {
+  width: 100%;
+    height: 1px;
+    background: #17284B;
+    margin-top: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .restaurant_container {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.restaurant_description {
+  font-family:'Montserrat', sans-serif;
+  font-size: 13px;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.restaurant_linea_blu {
+  width: 100%;
+    height: 1px;
+    background: #17284B;
+    margin-top: 0px;
+}
+}
+@media only screen and (max-width: 375px) {
+  .restaurant_container {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.restaurant_description {
+  font-family:'Montserrat', sans-serif;
+  font-size: 13px;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.restaurant_linea_blu {
+  width: 100%;
+    height: 1px;
+    background: #17284B;
+    margin-top: 0px;
+}
+}
+
+/*end ristorante page code*/
+
+/*start menu page code*/
+
+.taste {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #17284B;
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  letter-spacing: 0.5px;
+}
+.menu_linea-blu{
+  width: 300px;
+    height: 4px;
+    background: #17284B;
+    clear: both;
+    margin: auto;
+    margin-top: 0px;
+}
+.grid-container-menu .fish {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 100px;
+    margin: 0px 30px 30px 30px;
+    padding: 0px 30px 30px 30px;
+}
+
+.grid-container-menu .meat {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 100px;
+    margin: 0px 30px 30px 30px;
+    padding: 0px 30px 30px 30px;
+}
+.proposal {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #17284B;
+  color: #F2F2F2;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #17284B transparent transparent transparent;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.grid-container-menu .wine {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 100px;
+    margin: 0px 30px 30px 30px;
+    padding: 0px 30px 30px 30px;
+}
+.cantina {
+  float: right;
+}
+.pizza {
+  padding:30px;
+  padding-top: 0px;
+  margin-left:30px;
+  margin-right:30px;
+  padding-bottom: 0px;
+  letter-spacing: 1px;
+}
+@media only screen and (max-width: 600px) {
+  .taste {
+  text-align: center;
+  font-family: "Montserrat, sans-serif";
+  color: #17284B;
+  padding: 20px;
+}
+  .grid-container-menu .meat {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 50px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 10px 0px 10px;
+    font-size: 13px;
+  }
+  .grid-container-menu .fish {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 50px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 10px 0px 10px;
+    font-size: 13px;
+  }
+  .grid-container-menu .wine {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 50px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 10px 0px 10px;
+    font-size: 13px;
+  }
+  .cantinaxs {
+    display: none;
+  }
+  #poggio {
+    font-size: 11.5px;
+  }
+  .pizza {
+    font-size: 13px;
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 10px 0px 10px;
+  }
+}
+/*end menu page code*/
+
+/*star gallery page code*/
+.gallery_linea-grigia{
+  width:100%;
+  background-color: #D9D9D9;
+  height: 1px;
+}
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #17284B;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #17284B;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 800px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(23, 40, 75);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(23, 40, 75), 0 6px 20px 0 rgba(23, 40, 75);
+}
+
+.popupgallery {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.popupgallery .popuptextgallery {
+    visibility: hidden;
+    width: 160px;
+    background-color: #17284B;
+    color: #F2F2F2;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 120%;
+    font-size: 15px;
+}
+.popupgallery .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@media only screen and (max-width: 600px) {
+  .column {
+  float: left;
+  width: 50%;
+  margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 160px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #17284B;
+}
+}
+/*style documentazione*/
+.documentazione {
+  margin:30px;
+  padding:100px;
+}
+@media only screen and (max-width: 768px) {
+  .documentazione {
+  margin:30px;
+  padding:0px;
+}
+}
+
+.lang-switch {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px 0;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+.lang-switch button {
+  background: none;
+  border: none;
+  font-family: 'Cinzel', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+  color: #F2F2F2;
+  opacity: 0.5;
+  transition: opacity 200ms ease;
+}
+.lang-switch button:hover,
+.lang-switch button.active {
+  opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .lang-switch {
+    position: static;
+    top: auto;
+    right: auto;
+    padding: 8px 0;
+  }
+}
+
