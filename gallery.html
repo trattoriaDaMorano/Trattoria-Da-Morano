@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<title>Trattoria da Morano</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="cssmor/stylemor.css">
+		<!-- start fontawsome link -->
+		<script src="https://kit.fontawesome.com/5f1121dcce.js" crossorigin="anonymous"></script>
+		<!-- end fontawsome link -->
+		<!-- start cinzel link font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+		<!-- end cinzel link font -->
+		<!-- start cinzel decorative link font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+		<!-- end cinzel decorative link font-->
+		<script src="scriptmor.js" defer></script>
+		<script src="jsmor/translations.js"></script>
+		<script src="jsmor/i18n.js" defer></script>
+		<!-- start Montserrat link font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<!-- end Monteserrat link font -->
+    
+			</head>	
+				<body>
+					  <header>
+							<nav class="navbar">
+
+								<div class="brand-title"><b>Trattoria da Morano</b></div>
+
+								<div class="toggle-button">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+								</div>
+
+								<div class="navbar-links">
+									<ul>
+										<li class="menu_item"> <a href="index.html" data-i18n="nav.home">Homepage</a></li>
+										<li class="menu_item"> <a href="chi_siamo.html" data-i18n="nav.about">Chi siamo</a></li>
+										<li class="menu_item"> <a href="ristorante.html" data-i18n="nav.restaurant">Ristorante</a></li>
+										<li class="menu_item"> <a href="menu.html" data-i18n="nav.menu">Menù</a></li>
+										<li class="menu_item"> <a href="gallery.html" id="orienter" class="active" data-i18n="nav.gallery">Gallery</a></li>
+									</ul>
+								</div>
+								<div class="lang-switch">
+									<button type="button" data-lang="it" aria-label="Italiano">IT</button>
+									<button type="button" data-lang="en" aria-label="English">EN</button>
+									<button type="button" data-lang="de" aria-label="Deutsch">DE</button>
+									<button type="button" data-lang="fr" aria-label="Français">FR</button>
+								</div>
+							</nav>
+							<section></section>
+                        </header>
+  <div class="row">
+    <h1 style="text-align: center; font-family: 'Montserrat, sans-serif'" data-i18n="gallery.terrace">La terrazza</h1>
+  <div class="column">
+    <img src="photosmorano/0004 Moranorid169.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/0005 Moranorid169.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/0008 Moranorid169.jpg" style="width:100%" onclick="openModal();currentSlide(43)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/0023 Moranorid169.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/0035 Moranorid169.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/drone4.169.jpeg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+   <div class="column">
+    <img src="photosmorano/terrazza_2rid.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/drone3.jpeg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+</div>
+<hr class="gallery_linea-grigia"></hr>
+<div class="row">
+  <h1 style="text-align: center; font-family: 'Montserrat, sans-serif'" data-i18n="gallery.veranda">La veranda</h1>
+  <div class="column">
+    <img src="photosmorano/0010 Moranorid169.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/0011 Moranorid169.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/0012 Moranorid169.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/0014 Moranorid169.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/veranda_1.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+  </div>
+  </div>
+  <hr class="gallery_linea-grigia"></hr>
+  <div class="row">
+    <h1 style="text-align: center; font-family: 'Montserrat, sans-serif'" data-i18n="gallery.rooms">Le sale interne</h1>
+    <div class="column">
+    <img src="photosmorano/salainterna_1.169.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/salainterna_2.169.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/salainterna_3.169.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/salainterna_4.169.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="photosmorano/salainterna_5.169.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+  </div>
+  </div>
+
+
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="photosmorano/0004 Moranorid169.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="photosmorano/0005 Moranorid169.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="photosmorano/0008 Moranorid169.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="photosmorano/0023 Moranorid169.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="photosmorano/0035 Moranorid169.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="photosmorano/drone4.169.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="photosmorano/terrazza_2rid.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="photosmorano/drone3.jpeg" style="width:100%">
+    </div>
+
+    
+
+     <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="photosmorano/0010 Moranorid169.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="photosmorano/0011 Moranorid169.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="photosmorano/0012 Moranorid169.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="photosmorano/0014 Moranorid169.jpg" style="width:100%">
+    </div>
+
+     <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="photosmorano/veranda_1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="photosmorano/salainterna_1.169.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="photosmorano/salainterna_2.169.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="photosmorano/salainterna_3.169.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="photosmorano/salainterna_4.169.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="photosmorano/salainterna_5.169.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+  </div>
+</div>
+					<footer>
+            <div class="rowfoot">
+              <div class="colfoot-4" style="padding-bottom: 15px">
+                <div class="footitle"><b data-i18n="footer.contact">Contattaci</b> <a href="tel:+0761826394"><i class="icon fa-solid fa-phone fa-shake" style="--fa-animation-duration: 2s;"></i></a></div>
+                  <a href="tel:+0761826394"><span data-i18n="footer.phoneLabel">Tel.:</span> 0761826394</a><br>
+               </div>
+              <div class="colfoot-4" style="padding-bottom: 15px">
+                  <div class="footitle"><b data-i18n="footer.location">Dove siamo</b><i class=" icon fa-solid fa-location-dot"></i></div>
+                  Via del lago 160 <br>Montefiascone (VT)<br>
+                  <a href="https://goo.gl/maps/LNAeE7PMAn3Y1VBK8" id="link_google_map" data-i18n="footer.maplink">Link Google Maps</a>
+              </div>
+              <div class="colfoot-4">
+                <div class="footitle"><b data-i18n="footer.hours">Orari</b><i class="icon fa-solid fa-clock"></i></div>
+                <span data-i18n="footer.lunch">Pranzo: 12:30-14:30</span><br>
+                <span data-i18n="footer.dinner">Cena: 19:30-22:00</span><br>
+                    <span data-i18n="footer.closedDay">Giorno di chiusura: giovedì</span><br>
+                    <span data-i18n="footer.augustNote">(Agosto aperti tutti i giorni)</span>
+              </div>
+            </div>
+              <div class="sign_iva">
+                <i>Design by Lorenzo Viglianisi with <i class="fa-solid fa-heart"></i></i> IVA 01595400563
+          </footer>
+			 </body>
+		</Shtml>
